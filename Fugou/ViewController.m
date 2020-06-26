@@ -29,7 +29,7 @@ Boolean lastStatus = NO;
     if (![[NSUserDefaults standardUserDefaults] boolForKey:@"Launched"]) {
       
         UIAlertController* alert = [UIAlertController alertControllerWithTitle:@"Welcome to Fugou"
-                                   message:@"Hello and welcome to Fugou. As long as you keep this app open, Fugou will continously monitor for nearby devices. In case a certain threshold is reached, it will alert you by vibration. You can't use any other bluetooth based peripherals with Fugou (e.g. bluetooth headset) "
+                                   message:@"Hello and welcome to Fugou. As long as you keep this app open, Fugou will continously monitor for nearby devices. This can be useful e.g. if you want your sick kids to play with each other while keeping their distance. In case a certain threshold is reached, it will alert you by vibration. "
                                    preferredStyle:UIAlertControllerStyleAlert];
 
         UIAlertAction* defaultAction = [UIAlertAction actionWithTitle:@"OK" style:UIAlertActionStyleDefault
